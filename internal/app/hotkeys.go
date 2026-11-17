@@ -133,13 +133,18 @@ func RegisterApplicationHotkeys(b *Bootstrap) {
 
 	h := b.Hotkeys
 
-	h.Register("F1", func() {
-		logger.Info("F1 - Select Company requested")
+	h.Register("F2", func() {
+		logger.Info("F2 - Select Company requested")
 		ui.OpenScreen("company.list", b.AppCtx)
 	})
 
-	h.Register("F2", func() {
+	h.Register("F3", func() {
 		logger.Info("Accounts requested")
+		ui.OpenScreen("ledger.list", b.AppCtx)
+	})
+	h.Register("F4", func() {
+		logger.Info("F4 Group requested")
+		ui.OpenScreen("group.list", b.AppCtx)
 	})
 
 	h.Register("F6", func() {
@@ -176,7 +181,7 @@ func makeHotkey(
 	// Example:
 	//
 	// if mods&gpucontext.ModifierCtrl != 0 {
-	//     parts = append(parts, "CTRL")
+	// 	parts = append(parts, "CTRL")
 	// }
 
 	parts = append(parts, keyName(key))

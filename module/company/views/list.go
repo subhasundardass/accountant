@@ -102,5 +102,5 @@ func NewList(ctx *context.AppContext) widget.Widget {
 			Bold(),
 
 		v.table,
-	).Padding(16).Gap(12)
+	).Padding(8).Gap(12)
 }
