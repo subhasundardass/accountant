@@ -6,7 +6,9 @@ replace github.com/gogpu/ui => ./pkg/gogpu-ui
 
 require (
 	entgo.io/ent v0.14.6
+	github.com/gogpu/gg v0.52.3
 	github.com/gogpu/gogpu v0.53.0
+	github.com/gogpu/gpucontext v0.28.0
 	github.com/gogpu/ui v0.0.0-00010101000000-000000000000
 	gopkg.in/yaml.v3 v3.0.1
 	modernc.org/sqlite v1.57.0
@@ -22,8 +24,6 @@ require (
 	github.com/go-openapi/inflect v0.19.0 // indirect
 	github.com/go-webgpu/goffi v0.6.3 // indirect
 	github.com/go-webgpu/webgpu v0.5.5 // indirect
-	github.com/gogpu/gg v0.52.3 // indirect
-	github.com/gogpu/gpucontext v0.28.0 // indirect
 	github.com/gogpu/gputypes v0.5.2 // indirect
 	github.com/gogpu/naga v0.18.0 // indirect
 	github.com/gogpu/wgpu v0.31.4 // indirect
